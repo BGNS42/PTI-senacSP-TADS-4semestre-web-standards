@@ -1,10 +1,15 @@
+/* ========================================
+   RESET
+======================================== */
 * {
     /* quando o espaço fica pequeno, a foto do prof cobre o texto */
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
+/* ========================================
+   VARIÁVEIS
+======================================== */
 :root {
     /* fontes */
     --font-heading: "Poppins", sans-serif;
@@ -22,31 +27,49 @@
     --espacamento: 1rem;
     --margem-lateral: 8px;
 }
-
+/* ========================================
+   CONFIGURAÇÕES GERAIS
+======================================== */
 body {
     background-color: var(--off-white);
     color: var(--cinza-azulado);
     font-family: var(--font-body);
+    /* padding: 0px 30vh; */
+    /* padding: 0px clamp(1rem, 100vh, 50vh); */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
 }
 
+/* Container principal */
+header,
+main,
+footer {
+    width: min(100% - 2rem, 1200px);
+    margin-inline: auto;
+}
+/* ========================================
+   HEADER
+======================================== */
 header{
     display: flex;
-    padding: var(--espacamento);
+    justify-content: space-between;
     align-items: center;
-    background-color: var(--off-white);
+
+    padding: var(--espacamento);
 
     font-family: var(--font-button);
     font-weight: var(--font-button-weight);
 }
 
 .logo {
-    margin-right: auto;
     text-decoration: none;
-    color: inherit;
+    color: var(--azul-marinho);
+    font-family: var(--font-heading);
+    font-weight: 700;
 }
 
 .menu-horizontal {
-    margin-right: auto;
     display: flex;
     align-items: center;
     /* justify-content: space-between; */
@@ -57,14 +80,16 @@ header{
 
 .menu-horizontal a {
     text-decoration: none;
-    color: inherit;
-    transition: 220ms;
+    color: var(--azul-marinho);
+    transition: color 220ms ease;
 }
 
 .menu-horizontal a:hover {
     color: var(--laranja);
 }
-
+/* ========================================
+   HERO
+======================================== */
 #inicio {
     display: flex;
     justify-content: space-between;

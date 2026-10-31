@@ -1,49 +1,56 @@
 :root {
-            /* fontes */
-            --titulo-fFamily: "Poppins";
-            --texto-fFamily: "Inter";
-            --botoes-fFamily: "Inter";
-            --botoes-fWeigth: semibold;
-        }
-        header{
-            display: flex;
-            justify-content: space-between;
-            margin: 8px 1rem;
-        }
+    /* fontes */
+    --titulo-fFamily: "Poppins";
+    --texto-fFamily: "Inter";
+    --botoes-fFamily: "Inter";
+    --botoes-fWeigth: semibold;
+}
 
-        .menu-horizontal {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            width: 80%;
-            gap: min(5px);
-        }
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 1rem;
+}
 
-        main {
-            display: flex;
-            justify-content: space-between;
-            margin: 8px;
-        }
+.menu-horizontal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    gap: min(5px);
+}
 
-        .text-content {
-            width: 50%;
-            padding: 1rem;
-        }
+main {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px;
+}
 
-        .foto-content {
-            width: 50%;
-            padding: 1rem;
-        }
+.text-content {
+    width: 50%;
+    padding: 1rem;
+}
 
-        h1 {
-            font-family: var(--titulo-fFamily);
-        }
+.foto-content {
+    width: 50%;
+    padding: 1rem;
+}
 
-        p {
-            font-family: var(--texto-fFamily);
-        }
+h1 {
+    font-family: var(--titulo-fFamily);
+}
 
-        button {
-            font-family: var(--botoes-fFamily);
-            font-weight: var(--botoes-fWeigth);
-        }
+p {
+    font-family: var(--texto-fFamily);
+}
+
+button {
+    font-family: var(--botoes-fFamily);
+    font-weight: var(--botoes-fWeigth);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

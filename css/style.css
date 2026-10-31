@@ -1,6 +1,8 @@
 * {
     /* quando o espaço fica pequeno, a foto do prof cobre o texto */
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 :root {
@@ -9,6 +11,21 @@
     --font-body: "Inter", sans-serif;
     --font-button: "Inter", sans-serif;
     --font-button-weight: 600;
+
+    /* cores */
+    --azul-marinho: #183B56;
+    --off-white:#F4F1EA;
+    --laranja: #E99A45;
+    --cinza-azulado: #263746;
+
+    /* padding lateral */
+    --espacamento: 0.5rem;
+}
+
+body {
+    background-color: lightyellow;
+    color: var(--cinza-azulado);
+    font-family: var(--font-body);
 }
 
 header{
@@ -35,7 +52,7 @@ header{
 
 .text-content, .foto-content {
     flex: 1;
-    padding: 1rem;
+    padding: var(--espacamento);
 }
 
 .foto-content {
@@ -48,7 +65,7 @@ header{
     border-radius: 50%;
 }
 
-h1 {
+h1,h2, h3, h4 {
     font-family: var(--font-heading);
 }
 

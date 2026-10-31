@@ -20,7 +20,7 @@ header{
     gap: min(5px);
 }
 
-main {
+#inicio {
     display: flex;
     justify-content: space-between;
     margin: 8px;

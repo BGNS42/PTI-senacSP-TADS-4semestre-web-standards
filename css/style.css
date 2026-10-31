@@ -1,0 +1,49 @@
+:root {
+            /* fontes */
+            --titulo-fFamily: "Poppins";
+            --texto-fFamily: "Inter";
+            --botoes-fFamily: "Inter";
+            --botoes-fWeigth: semibold;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            margin: 8px 1rem;
+        }
+
+        .menu-horizontal {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 80%;
+            gap: min(5px);
+        }
+
+        main {
+            display: flex;
+            justify-content: space-between;
+            margin: 8px;
+        }
+
+        .text-content {
+            width: 50%;
+            padding: 1rem;
+        }
+
+        .foto-content {
+            width: 50%;
+            padding: 1rem;
+        }
+
+        h1 {
+            font-family: var(--titulo-fFamily);
+        }
+
+        p {
+            font-family: var(--texto-fFamily);
+        }
+
+        button {
+            font-family: var(--botoes-fFamily);
+            font-weight: var(--botoes-fWeigth);
+        }

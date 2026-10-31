@@ -133,10 +133,10 @@ header{
 }
 
 .professor-foto-hero {
-    width: 280px;
+    width: 480px;
     aspect-ratio: 1;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 36px;
 }
 /* ========================================
    BOTÕES DO HERO

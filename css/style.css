@@ -34,6 +34,13 @@ header{
 .foto-content {
     width: 50%;
     padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.professor-foto-hero {
+    border-radius: 50%;
 }
 
 h1 {
@@ -44,10 +51,21 @@ p {
     font-family: var(--texto-fFamily);
 }
 
-button {
+.botao {
     font-family: var(--botoes-fFamily);
     font-weight: var(--botoes-fWeigth);
+    text-decoration: none;
+    color: inherit;
+    padding: .2rem .8rem;
+    border-radius: 36px;
+    background-color: yellow;
+    gap: min(5px);
 }
+
+.botao:hover {
+    text-decoration: underline;
+}
+
 
 footer {
     display: flex;

@@ -1,3 +1,8 @@
+* {
+    /* quando o espaço fica pequeno, a foto do prof cobre o texto */
+    box-sizing: border-box;
+}
+
 :root {
     /* fontes */
     --font-heading: "Poppins", sans-serif;
@@ -10,14 +15,16 @@ header{
     display: flex;
     justify-content: space-between;
     margin: 8px 1rem;
+    align-items: center;
 }
 
 .menu-horizontal {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 80%;
-    gap: min(5px);
+    /* width: 80%; */
+    /* gap: min(5px); */
+    gap: 0.5rem;
 }
 
 #inicio {

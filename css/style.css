@@ -237,7 +237,7 @@ header{
     line-height: 1.6;
 }
 
-.metodologia-cards {
+[class*=-cards] {
     display: flex;
     gap: 1.5rem;
     width: 100%;

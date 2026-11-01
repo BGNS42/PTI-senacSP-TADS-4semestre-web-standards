@@ -323,7 +323,7 @@ header{
 
 .metodologia-card p {
     color: var(--cinza-azulado);
-    list-style: 1.6;
+    line-height: 1.6;
 }
 
 /* .metodologia-card:hover {

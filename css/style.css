@@ -275,7 +275,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3rem;
+    gap: 3.5rem;
 }
 
 /* se não houver mais mudanças, usar mesmo seletor para todos os -header */
@@ -297,7 +297,7 @@ header{
 }
 
 .precos-header p {
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
 .preco-cards {
@@ -315,10 +315,10 @@ header{
     flex: 1;
     min-width: 0;
 
-    border: 1px solid transparent;
+    border: 1px solid rgba(24, 59, 86, 0.08);
     border-radius: 24px;
     background-color: white;
-    padding: 1.5rem;
+    padding: 2rem;
 
     box-shadow: 0 4px 12px rgba(24, 59, 86, 0.10);
 
@@ -331,37 +331,47 @@ header{
 .preco-card h3 {
     color: var(--azul-marinho);
     font-size: 1.3rem;
+    font-weight: 700;
 }
 
+.preco-selo-placeholder,
+.preco-card .recomendado {
+    height: 2rem;
+    margin-top: 0.75rem;
+}
+
+.preco-card .recomendado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--laranja);
+    color: var(--azul-marinho);
+    font-size: 0.8rem;
+    font-weight: 700;
+
+    padding: 0 0.8rem;
+    border-radius: 20px;
+}
+
+/* PREÇOS */
 .preco-card .preco-texto {
     font-family: var(--font-heading);
     font-size: 2.5rem;
     font-weight: 700;
     color: var(--azul-marinho);
-    margin-top: 1.5rem;
+
+    margin-top: 0.5rem;
 }
 
-.preco-card-destaque {
-    border: 2px solid var(--laranja);
-    box-shadow: 0 8px 24px rgba(24, 59, 86, 0.16);
-    /* transform: translateY(-8px); */
+.preco-descricao {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    min-height: 2.7rem;
+    margin-top: 0.5rem;
 }
 
-.preco-card-destaque .recomendado {
-    background-color: var(--off-white);
-    color: var(--laranja);
-    font-size: 0.8rem;
-    font-weight: 700;
-    padding: 0.4rem 0.8rem;
-    border-radius: 20px;
-    margin-top: 0.75rem;
-}
-
-/* .preco-card-destaque:hover {
-    transform: translateY(-12px);
-    box-shadow: 0 14px 28px rgba(24, 59, 86, 0.20);
-} */
-
+/* LISTA DE BENEFICIOS */
 .preco-card ul {
     display: flex;
     flex-direction: column;
@@ -369,15 +379,43 @@ header{
 
     margin: 1.5rem 0;
     padding-left: 1.2rem;
+
+    font-size: 0.95rem;
     line-height: 1.5;
 }
 
-.preco-card .botao {
+/* TAGS INFERIORES */
+.preco-card .tag {
+    display: inline-flex;
+    align-items: center;
+
+    background-color: rgba(233, 154, 69, 0.13);
+    color: var(--azul-marinho);
+
+    font-size: 0.8rem;
+    font-weight: 700;
+
+    padding: 0.5rem 0.85rem;
+    border-radius: 20px;
+
     margin-top: auto;
-    align-self: stretch;
+    margin-bottom: 1rem;
+}
+
+/* BOTOES */
+.preco-card .botao {
+    margin-top: 0;
+    width: 100%;
     text-align: center;
 }
 
+/* DESTAQUE PLANO MENSAL */
+.preco-card-destaque {
+    border: 2px solid var(--laranja);
+    box-shadow: 0 8px 24px rgba(24, 59, 86, 0.16);
+}
+
+/* HOVER IGUAL PARA TODOS */
 .preco-card:hover {
     transform: translateY(-6px);
     border-color: var(--laranja);

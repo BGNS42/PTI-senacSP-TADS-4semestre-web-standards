@@ -333,13 +333,34 @@ header{
     font-size: 1.3rem;
 }
 
-.preco-car .preco-texto {
+.preco-card .preco-texto {
     font-family: var(--font-heading);
     font-size: 2.5rem;
     font-weight: 700;
     color: var(--azul-marinho);
     margin-top: 1.5rem;
 }
+
+.preco-card-destaque {
+    border: 2px solid var(--laranja);
+    box-shadow: 0 8px 24px rgba(24, 59, 86, 0.16);
+    /* transform: translateY(-8px); */
+}
+
+.preco-card-destaque .recomendado {
+    background-color: var(--off-white);
+    color: var(--laranja);
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    margin-top: 0.75rem;
+}
+
+/* .preco-card-destaque:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 14px 28px rgba(24, 59, 86, 0.20);
+} */
 
 .preco-card ul {
     display: flex;

@@ -144,8 +144,84 @@
         </section>
         <hr>
         <section id="contato">
-            <h2>Entre em contato</h2>
-        </section>        
+            <div class="contato-info">
+                <h2>Vamos começar sua jornada no inglês?</h2>
+
+                <p>
+                    Dê o primeiro passo para conquistar mais confiança
+                    e abrir novas oportunidades através do inglês.
+                    Entre em contato e vamos conversar sobre seus objetivos!
+                </p>
+
+                <div class="contato-alternativas">
+                    <h3>Prefere falar diretamente?</h3>
+
+                    <a href="https://wa.me/5511999999999"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                        Converse pelo WhatsApp
+                    </a>
+
+                    <a href="mailto:contato@englishwithalex.com">
+                        Envie um e-mail
+                    </a>
+                </div>
+            </div>
+
+            <div class="contato-formulario">
+                <h3>Envie sua mensagem</h3>
+
+                <form action="#" method="post">
+                    <div class="campo-formulario">
+                        <label for="nome">Nome completo</label>
+                        <input
+                            type="text"
+                            id="nome"
+                            name="nome"
+                            placeholder="Como podemos te chamar?"
+                            autocomplete="name"
+                            required
+                        >
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="email">E-mail</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="seuemail@exemplo.com"
+                            autocomplete="email"
+                            required
+                        >
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="assunto">Assunto</label>
+                        <select id="assunto" name="assunto" required>
+                            <option value="" disabled selected>
+                                Selecione uma opção
+                            </option>
+                            <option value="aula-avulsa">Aula avulsa</option>
+                            <option value="plano-mensal">Plano mensal</option>
+                            <option value="intensivo">Plano intensivo</option>
+                            <option value="duvidas">Tenho outras dúvidas</option>
+                        </select>
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="mensagem">Sua mensagem</label>
+                        <textarea
+                            id="mensagem"
+                            name="mensagem"
+                            rows="5"
+                            placeholder="Conte um pouco sobre seus objetivos com o inglês..."
+                            required
+                        ></textarea>
+                    </div>
+                    <button type="submit" class="botao">
+                        Enviar mensagem
+                    </button>
+                </form>
+            </div>
+        </section>       
     </main>
     <footer>
         <p><em>Informações institucionais, redes sociais e direitos autorais</em></p>

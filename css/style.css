@@ -31,6 +31,10 @@
 /* ========================================
    CONFIGURAÇÕES GERAIS
 ======================================== */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--off-white);
     color: var(--cinza-azulado);
@@ -50,6 +54,10 @@ footer {
     margin-inline: auto;
 }
 
+section {
+    scroll-margin-top: 50px;
+}
+
 h1, h2, h3, h4 {
     font-family: var(--font-heading);
 }
@@ -67,6 +75,10 @@ h1, h2, h3, h4 {
    HEADER
 ======================================== */
 header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -75,6 +87,12 @@ header{
 
     font-family: var(--font-button);
     font-weight: var(--font-button-weight);
+
+    background-color: var(--off-white);
+    
+    backdrop-filter: blur(10px);
+
+    border-bottom: 1px solid rgba(24, 59, 86, 0.08);
 }
 
 .logo {

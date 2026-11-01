@@ -573,9 +573,93 @@ header{
 /* ========================================
    FOOTER
 ======================================== */
-footer {
+/* footer {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 2rem 0;
+} */
+
+/* FOOTER */
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2.5rem 1rem;
+    background-color: var(--off-white);
+    color: var(--cinza-azulado);
+    border-top: 1px solid rgba(24, 59, 86, 0.15);
+}
+
+/* Identidade e redes sociais */
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.footer-identidade {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer-identidade .logo {
+    color: var(--azul-marinho);
+    font-size: 1.5rem;
+}
+
+.footer-identidade p {
+    font-size: 0.9rem;
+    color: var(--cinza-azulado);
+}
+
+.footer-redes {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.footer-redes a {
+    color: var(--azul-marinho);
+    text-decoration: none;
+    transition: color 220ms ease;
+}
+
+.footer-redes a:hover {
+    color: var(--laranja);
+}
+
+/* Navegação */
+.footer-navegacao {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1.5rem 0;
+    border-top: 1px solid rgba(24, 59, 86, 0.12);
+    border-bottom: 1px solid rgba(24, 59, 86, 0.12);
+}
+
+.footer-navegacao a {
+    color: var(--azul-marinho);
+    text-decoration: none;
+    transition: color 220ms ease;
+}
+
+.footer-navegacao a:hover {
+    color: var(--laranja);
+}
+
+/* Copyright */
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--cinza-azulado);
+    opacity: 0.8;
 }

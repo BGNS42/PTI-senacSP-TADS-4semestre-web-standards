@@ -14,19 +14,53 @@
     /* fontes */
     --font-heading: "Poppins", sans-serif;
     --font-body: "Inter", sans-serif;
-    --font-button: "Inter", sans-serif;
-    --font-button-weight: 600;
+    --font-button: var(--font-body);
 
-    /* lines-height */
+    --font-weight-regular: 400;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* TIPOGRAFIA - TAMANHOS */
+    --texto-pequeno: 0.9rem;
+    --texto-normal: 1rem;
+    --texto-subtitulo: 1.25rem;
+    --titulo-secao: 2.5rem;
 
     /* cores */
     --azul-marinho: #183B56;
     --off-white:#F4F1EA;
     --laranja: #E99A45;
     --cinza-azulado: #263746;
+    --branco: #FFFFFF;
 
-    /* padding lateral */
+    --cor-erro: #d93025;
+    --cor-sucesso: #198754;
+
+    /* espacamento */
     --espacamento: 1.5rem;
+    --gap-pequeno: 0.5rem;
+    --gap-medio: 1rem;
+    --gap-grande: 1.5rem;
+    --gap-extra: 2rem;
+
+    /* BORDAS */
+    --radius-pequeno: 10px;
+    --radius-medio: 24px;
+    --radius-grande: 36px;
+    --radius-circular: 50%;
+
+    /* SOMBRAS */
+    --sombra-card: 0 4px 12px rgba(24, 59, 86, 0.10);
+    --sombra-card-hover: 0 12px 24px rgba(24, 59, 86, 0.16);
+    --sombra-formulario: 0 6px 20px rgba(24, 59, 86, 0.08);
+
+    /* TRANSIÇÕES */
+    --transicao-rapida: 220ms ease;
+    --transicao-padrao: 250ms ease;
+
+    /* LAYOUT */
+    --largura-maxima: 1200px;
+    --largura-texto: 67ch;
 }
 /* ========================================
    CONFIGURAÇÕES GERAIS

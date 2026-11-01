@@ -557,6 +557,19 @@ header{
     cursor: pointer;
     font-size: 1rem;
 }
+
+/* feedback formulário */
+.campo-formulario input:user-invalid,
+.campo-formulario select:user-invalid,
+.campo-formulario textarea:user-invalid {
+    border-color: #d93025;
+}
+
+.campo-formulario input:user-valid,
+.campo-formulario select:user-valid,
+.campo-formulario textarea:user-valid {
+    border-color: #198754;
+}
 /* ========================================
    FOOTER
 ======================================== */

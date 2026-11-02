@@ -275,13 +275,6 @@ header{
     border-radius: var(--radius-circular);
 }
 
-/* Cabeçalho da seção */
-.text-content h2 {
-    color: var(--azul-marinho);
-    font-size: var(--titulo-secao);
-    line-height: 1.2;
-}
-
 .sobre-diferenciais {
     display: flex;
     flex-direction: column;

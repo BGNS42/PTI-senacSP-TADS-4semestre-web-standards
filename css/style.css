@@ -79,7 +79,7 @@ body {
 header,
 main,
 footer {
-    width: min(100% - 2rem, 1200px);
+    width: min(100% - 2rem, var(--largura-maxima));
     margin-inline: auto;
 }
 
@@ -139,6 +139,13 @@ a:hover {
         box-shadow var(--transicao-padrao),
         border-color var(--transicao-padrao);
 }
+
+.hero-image, .about-image {
+    width: 100%;
+    max-width: 380px;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
 /* ========================================
    HEADER
 ======================================== */
@@ -167,13 +174,18 @@ header{
     text-decoration: none;
     color: var(--azul-marinho);
     font-family: var(--font-heading);
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
+}
+
+.logo:hover {
+    color: var(--azul-marinho);
 }
 
 .menu-horizontal {
     display: flex;
     align-items: center;
     gap: calc(var(--espacamento)/2);
+    font-weight: var(--font-weight-semibold);
 }
 /* ========================================
    HERO
@@ -182,9 +194,9 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 2rem;
+    gap: var(--gap-extra);
 
-    padding: 2rem 0;
+    padding: var(--gap-extra) 0; /* 2rem 0 */
 }
 
 .text-content, .foto-content {
@@ -195,7 +207,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1rem;
+    gap: var(--gap-medio);
 }
 
 .text-content h1 {
@@ -216,11 +228,8 @@ header{
 }
 
 .hero-image {
-    width: 100%;
     max-width: 480px;
-    aspect-ratio: 1;
-    object-fit: cover;
-    border-radius: 36px;
+    border-radius: var(--radius-grande);
 }
 /* ========================================
    BOTÕES DO HERO
@@ -242,7 +251,7 @@ header{
     color: var(--azul-marinho);
 
     padding: .65rem 1.2rem;
-    border-radius: 36px;
+    border-radius: var(--radius-grande);
 
     background-color: var(--laranja);
     transition: background-color 220ms ease, transform 220ms ease;
@@ -264,11 +273,7 @@ header{
 }
 
 .about-image {
-    width: 100%;
-    max-width: 380px;
-    aspect-ratio: 1;
-    object-fit: cover;
-    border-radius: 50%;
+    border-radius: var(--radius-circular);
 }
 
 /* Cabeçalho da seção */
@@ -307,7 +312,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: var(--gap-extra);
 }
 
 .metodologia-header p {
@@ -318,7 +323,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1.5rem;
+    gap: var(--gap-grande);
     width: 100%;
 }
 
@@ -327,7 +332,7 @@ header{
     flex-direction: column;
     flex: 1 1 calc(33.333% - 1.5rem);
     max-width: 280px;
-    gap: 1rem;
+    gap: var(--gap-medio);
 
     border: 1px solid transparent;
     padding: 1.5rem;
@@ -337,7 +342,7 @@ header{
     color: var(--laranja);
     font-family: var(--font-heading);
     font-size: var(--titulo-secao);
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     line-height: 1;
 }
 
@@ -369,7 +374,7 @@ header{
 .preco-cards {
     display: flex;
     align-items: stretch;
-    gap: 1.5rem;
+    gap: var(--gap-grande);
     width: 100%;
 }
 
@@ -388,7 +393,7 @@ header{
 .preco-card h3 {
     color: var(--azul-marinho);
     font-size: 1.3rem;
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
 }
 
 .preco-selo-placeholder,
@@ -405,7 +410,7 @@ header{
     background-color: var(--laranja);
     color: var(--azul-marinho);
     font-size: 0.8rem;
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
 
     padding: 0 0.8rem;
     border-radius: 20px;
@@ -450,7 +455,7 @@ header{
     color: var(--azul-marinho);
 
     font-size: 0.8rem;
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
 
     padding: 0.5rem 0.85rem;
     border-radius: 20px;
@@ -469,7 +474,7 @@ header{
 /* DESTAQUE PLANO MENSAL */
 .preco-card-destaque {
     border: 2px solid var(--laranja);
-    box-shadow: 0 8px 24px rgba(24, 59, 86, 0.16);
+    box-shadow: var(--sombra-card);
 }
 
 /* HOVER IGUAL PARA TODOS */
@@ -494,7 +499,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1.5rem;
+    gap: var(--gap-grande);
 
     background-color: var(--azul-marinho);
     color: var(--off-white);
@@ -532,13 +537,13 @@ header{
 
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: var(--gap-grande);
 
     background-color: white;
     padding: 2.5rem;
-    border-radius: 24px;
+    border-radius: var(--radius-medio);
 
-    box-shadow: 0 6px 20px rgba(24, 59, 86, 0.08);
+    box-shadow: var(--sombra-formulario);
 }
 
 .contato-formulario h3 {
@@ -575,7 +580,7 @@ header{
 
     background-color: var(--off-white);
     border: 1px solid rgba(24, 59, 86, 0.15);
-    border-radius: 10px;
+    border-radius: var(--radius-pequeno);
 }
 
 .campo-formulario textarea {
@@ -614,7 +619,7 @@ header{
 footer {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: var(--gap-extra);
     padding: 2.5rem 1rem;
     background-color: var(--off-white);
     color: var(--cinza-azulado);
@@ -626,7 +631,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 2rem;
+    gap: var(--gap-extra);
 }
 
 .footer-identidade {
@@ -648,7 +653,7 @@ footer {
 .footer-redes {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: var(--gap-grande);
 }
 
 /* Navegação */
@@ -656,7 +661,7 @@ footer {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: var(--gap-extra);
     padding: 1.5rem 0;
     border-top: 1px solid rgba(24, 59, 86, 0.12);
     border-bottom: 1px solid rgba(24, 59, 86, 0.12);
@@ -666,9 +671,12 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.5rem;
+    gap: var(--gap-pequeno);
     text-align: center;
     font-size: 0.8rem;
     color: var(--cinza-azulado);
     opacity: 0.8;
 }
+/* ========================================
+   RESPONSIVIDADE
+======================================== */

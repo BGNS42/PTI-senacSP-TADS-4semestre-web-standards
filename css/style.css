@@ -161,7 +161,7 @@ header{
     padding: var(--espacamento);
 
     font-family: var(--font-button);
-    font-weight: var(--font-button-weight);
+    font-weight: var(--font-weight-semibold);
 
     background-color: var(--off-white);
     
@@ -185,7 +185,6 @@ header{
     display: flex;
     align-items: center;
     gap: calc(var(--espacamento)/2);
-    font-weight: var(--font-weight-semibold);
 }
 /* ========================================
    HERO
@@ -246,7 +245,7 @@ header{
     display: inline-block;
 
     font-family: var(--font-button);
-    font-weight: var(--font-button-weight);
+    font-weight: var(--font-weight-semibold);
     text-decoration: none;
     color: var(--azul-marinho);
 

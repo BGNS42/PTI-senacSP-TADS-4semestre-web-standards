@@ -2,7 +2,6 @@
    RESET
 ======================================== */
 * {
-    /* quando o espaço fica pequeno, a foto do prof cobre o texto */
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -107,12 +106,6 @@ a:hover {
     color: var(--laranja);
 }
 
-/* diminui a imagem;
-.hero-image,
-.about-image {
-    width: 100%;
-    max-width: 380px;
-} */
 #inicio, #sobre, #metodologia, #precos, #contato {
     min-height: 90vh;
     padding: 4rem 1rem;
@@ -133,16 +126,10 @@ a:hover {
     background-color: var(--branco);
     border-radius: var(--radius-medio);
     box-shadow: var(--sombra-card);
-
-    transition:
-        transform var(--transicao-padrao),
-        box-shadow var(--transicao-padrao),
-        border-color var(--transicao-padrao);
 }
 
 .hero-image, .about-image {
     width: 100%;
-    max-width: 380px;
     aspect-ratio: 1;
     object-fit: cover;
 }
@@ -195,7 +182,7 @@ header{
     align-items: center;
     gap: var(--gap-extra);
 
-    padding: var(--gap-extra) 0; /* 2rem 0 */
+    padding: var(--gap-extra) 0;
 }
 
 .text-content, .foto-content {
@@ -253,7 +240,10 @@ header{
     border-radius: var(--radius-grande);
 
     background-color: var(--laranja);
-    transition: background-color 220ms ease, transform 220ms ease;
+    transition:
+        background-color var(--transicao-rapida),
+        color var(--transicao-rapida),
+        transform var(--transicao-rapida);
 }
 
 .botao:hover {
@@ -272,6 +262,7 @@ header{
 }
 
 .about-image {
+    max-width: 380px;
     border-radius: var(--radius-circular);
 }
 
@@ -379,6 +370,18 @@ header{
 
     border: 1px solid rgba(24, 59, 86, 0.08);
     padding: 2rem;
+
+    transition:
+        transform var(--transicao-padrao),
+        box-shadow var(--transicao-padrao),
+        border-color var(--transicao-padrao);
+}
+
+/* HOVER IGUAL PARA TODOS */
+.preco-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--laranja);
+    box-shadow: var(--sombra-card-hover);
 }
 
 .preco-card h3 {
@@ -400,11 +403,11 @@ header{
 
     background-color: var(--laranja);
     color: var(--azul-marinho);
-    font-size: 0.8rem;
+    font-size: var(--texto-pequeno);
     font-weight: var(--font-weight-bold);
 
     padding: 0 0.8rem;
-    border-radius: 20px;
+    border-radius: var(--radius-medio);
 }
 
 /* PREÇOS */
@@ -418,7 +421,7 @@ header{
 }
 
 .preco-descricao {
-    font-size: 0.9rem;
+    font-size: var(--texto-pequeno);
     line-height: 1.5;
     min-height: 2.7rem;
     margin-top: 0.5rem;
@@ -433,7 +436,7 @@ header{
     margin: 1.5rem 0;
     padding-left: 1.2rem;
 
-    font-size: 0.95rem;
+    font-size: var(--texto-pequeno);
     line-height: 1.5;
 }
 
@@ -445,11 +448,11 @@ header{
     background-color: rgba(233, 154, 69, 0.13);
     color: var(--azul-marinho);
 
-    font-size: 0.8rem;
+    font-size: var(--texto-pequeno);
     font-weight: var(--font-weight-bold);
 
     padding: 0.5rem 0.85rem;
-    border-radius: 20px;
+    border-radius: var(--radius-medio);
 
     margin-top: auto;
     margin-bottom: 1rem;
@@ -465,14 +468,6 @@ header{
 /* DESTAQUE PLANO MENSAL */
 .preco-card-destaque {
     border: 2px solid var(--laranja);
-    box-shadow: var(--sombra-card);
-}
-
-/* HOVER IGUAL PARA TODOS */
-.preco-card:hover {
-    transform: translateY(-6px);
-    border-color: var(--laranja);
-    box-shadow: var(--sombra-card-hover);
 }
 /* ========================================
    CONTATO
@@ -496,7 +491,7 @@ header{
     color: var(--off-white);
 
     padding: 2.5rem;
-    border-radius: 24px;
+    border-radius: var(--radius-medio);
 }
 
 .contato-info h2 {
@@ -530,7 +525,7 @@ header{
     flex-direction: column;
     gap: var(--gap-grande);
 
-    background-color: white;
+    background-color: var(--branco);
     padding: 2.5rem;
     border-radius: var(--radius-medio);
 
@@ -539,7 +534,7 @@ header{
 
 .contato-formulario h3 {
     color: var(--azul-marinho);
-    font-size: 1.5rem;
+    font-size: var(--texto-subtitulo);
 }
 
 .contato-formulario form {
@@ -551,12 +546,12 @@ header{
 .campo-formulario {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: var(--gap-pequeno);
 }
 
 .campo-formulario label {
     color: var(--azul-marinho);
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
 }
 
 .campo-formulario input,
@@ -566,7 +561,7 @@ header{
     padding: 0.85rem 1rem;
 
     font-family: var(--font-body);
-    font-size: 0.95rem;
+    font-size: var(--texto-pequeno);
     color: var(--cinza-azulado);
 
     background-color: var(--off-white);
@@ -589,20 +584,20 @@ header{
 .contato-formulario .botao {
     border: none;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: var(--texto-normal);
 }
 
 /* feedback formulário */
 .campo-formulario input:user-invalid,
 .campo-formulario select:user-invalid,
 .campo-formulario textarea:user-invalid {
-    border-color: #d93025;
+    border-color: var(--cor-erro);
 }
 
 .campo-formulario input:user-valid,
 .campo-formulario select:user-valid,
 .campo-formulario textarea:user-valid {
-    border-color: #198754;
+    border-color: var(--cor-sucesso);
 }
 /* ========================================
    FOOTER
@@ -628,12 +623,12 @@ footer {
 .footer-identidade {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: var(--gap-pequeno);
 }
 
 .footer-identidade .logo {
     color: var(--azul-marinho);
-    font-size: 1.5rem;
+    font-size: var(--texto-subtitulo);
 }
 
 .footer-identidade p {
@@ -664,7 +659,7 @@ footer {
     align-items: center;
     gap: var(--gap-pequeno);
     text-align: center;
-    font-size: 0.8rem;
+    font-size: var(--texto-pequeno);
     color: var(--cinza-azulado);
     opacity: 0.8;
 }

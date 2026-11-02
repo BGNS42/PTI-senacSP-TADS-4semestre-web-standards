@@ -118,7 +118,7 @@ a:hover {
     padding: 4rem 1rem;
 }
 
-[class*=-header] {
+[class$=-header] {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -127,6 +127,17 @@ a:hover {
 
     width: 100%;
     max-width: var(--largura-texto);
+}
+
+.metodologia-card, .preco-card {
+    background-color: var(--branco);
+    border-radius: var(--radius-medio);
+    box-shadow: var(--sombra-card);
+
+    transition:
+        transform var(--transicao-padrao),
+        box-shadow var(--transicao-padrao),
+        border-color var(--transicao-padrao);
 }
 /* ========================================
    HEADER
@@ -319,11 +330,7 @@ header{
     gap: 1rem;
 
     border: 1px solid transparent;
-    border-radius: 24px;
-    background-color: white;
     padding: 1.5rem;
-
-    box-shadow: 0 4px 12px rgba(24, 59, 86, 0.10);
 }
 
 .metodologia-letra {
@@ -375,16 +382,7 @@ header{
     min-width: 0;
 
     border: 1px solid rgba(24, 59, 86, 0.08);
-    border-radius: 24px;
-    background-color: white;
     padding: 2rem;
-
-    box-shadow: 0 4px 12px rgba(24, 59, 86, 0.10);
-
-    transition:
-        transform 250ms ease,
-        box-shadow 250ms ease,
-        border-color 250ms ease;
 }
 
 .preco-card h3 {
@@ -478,7 +476,7 @@ header{
 .preco-card:hover {
     transform: translateY(-6px);
     border-color: var(--laranja);
-    box-shadow: 0 12px 24px rgba(24, 59, 86, 0.16);
+    box-shadow: var(--sombra-card-hover);
 }
 /* ========================================
    CONTATO

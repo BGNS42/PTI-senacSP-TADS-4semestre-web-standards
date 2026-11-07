@@ -162,6 +162,9 @@ header{
     color: var(--azul-marinho);
     font-family: var(--font-heading);
     font-weight: var(--font-weight-bold);
+
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .logo:hover {
@@ -666,3 +669,17 @@ footer {
 /* ========================================
    RESPONSIVIDADE
 ======================================== */
+@media (max-width: 600px) {
+    header {
+        gap: 0.75rem;
+        padding: 0.75rem 0;
+    }
+
+    .menu-horizontal {
+        gap: 0.5rem;
+    }
+
+    .menu-horizontal a {
+        font-size: 0.7rem;
+    }
+}

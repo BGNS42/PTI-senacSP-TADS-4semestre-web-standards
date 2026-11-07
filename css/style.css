@@ -736,3 +736,33 @@ footer {
         width: 80%;
     }
 }
+/* ========================================
+   RESPONSIVIDADE SOBRE
+======================================== */
+@media (max-width: 600px) {
+    #sobre {
+        flex-direction: column;
+        align-items: stretch;
+        gap: var(--gap-medio);
+        text-align: center;
+    }
+
+    #sobre .foto-content {
+        order: -1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-image {
+        width: 100%;
+        max-width: 340px;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+        border-radius: var(--radius-medio);
+    }
+
+    .sobre-diferenciais {
+        padding-left: 0;
+        list-style-position: inside;
+    }
+}

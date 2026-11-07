@@ -793,7 +793,7 @@ footer {
     }
 
     .preco-card {
-        width: 85%;
+        width: 100%;
     }
 }
 /* ========================================
@@ -809,5 +809,21 @@ footer {
     .contato-info,
     .contato-formulario {
         width: 100%;
+    }
+}
+/* ========================================
+   RESPONSIVIDADE FOOTER
+======================================== */
+@media (max-width: 600px) {
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--gap-grande);
+        text-align: center;
+    }
+
+    .footer-redes {
+        justify-content: center;
+        flex-wrap: wrap;
     }
 }

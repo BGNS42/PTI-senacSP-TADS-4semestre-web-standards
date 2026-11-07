@@ -520,6 +520,10 @@ header{
     text-decoration: none;
 }
 
+.contato-alternativas a:hover {
+    color: var(--laranja);
+}
+
 /* formulario */
 .contato-formulario {
     flex: 1;

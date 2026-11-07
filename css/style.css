@@ -673,10 +673,10 @@ footer {
 /* ========================================
    RESPONSIVIDADE
 ======================================== */
-/* ========================================
-   RESPONSIVIDADE HEADER
-======================================== */
 @media (max-width: 600px) {
+    /* ========================================
+    RESPONSIVIDADE HEADER
+    ======================================== */
     header {
         gap: 0.75rem;
         padding: 0.75rem 0;
@@ -689,11 +689,9 @@ footer {
     .menu-horizontal a {
         font-size: 0.7rem;
     }
-}
-/* ========================================
-   RESPONSIVIDADE HERO
-======================================== */
-@media (max-width: 600px) {
+    /* ========================================
+    RESPONSIVIDADE HERO
+    ======================================== */
     /* HERO */
     #inicio {
         flex-direction: column;
@@ -739,11 +737,9 @@ footer {
         text-align: center;
         width: 80%;
     }
-}
-/* ========================================
-   RESPONSIVIDADE SOBRE
-======================================== */
-@media (max-width: 600px) {
+    /* ========================================
+    RESPONSIVIDADE SOBRE
+    ======================================== */
     #sobre {
         flex-direction: column;
         align-items: stretch;
@@ -769,11 +765,9 @@ footer {
         padding-left: 0;
         list-style-position: inside;
     }
-}
-/* ========================================
-   RESPONSIVIDADE METODOLOGIA
-======================================== */
-@media (max-width: 600px) {
+    /* ========================================
+    RESPONSIVIDADE METODOLOGIA
+    ======================================== */
     .metodologia-header {
         text-align: center;
     }
@@ -782,11 +776,9 @@ footer {
         flex-basis: 100%;
         max-width: 100%;
     }
-}
-/* ========================================
-   RESPONSIVIDADE PLANOS E PREÇOS
-======================================== */
-@media (max-width: 600px) {
+    /* ========================================
+    RESPONSIVIDADE PLANOS E PREÇOS
+    ======================================== */
     .preco-cards {
         flex-direction: column;
         align-items: center;
@@ -795,11 +787,9 @@ footer {
     .preco-card {
         width: 100%;
     }
-}
-/* ========================================
-   RESPONSIVIDADE CONTATO
-======================================== */
-@media (max-width: 600px) {
+    /* ========================================
+    RESPONSIVIDADE CONTATO
+    ======================================== */
     #contato {
         flex-direction: column;
         align-items: stretch;
@@ -810,11 +800,9 @@ footer {
     .contato-formulario {
         width: 100%;
     }
-}
-/* ========================================
-   RESPONSIVIDADE FOOTER
-======================================== */
-@media (max-width: 600px) {
+    /* ========================================
+    RESPONSIVIDADE FOOTER
+    ======================================== */
     .footer-top {
         flex-direction: column;
         align-items: center;

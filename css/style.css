@@ -773,9 +773,22 @@ footer {
     .metodologia-header {
         text-align: center;
     }
-
+    
     .metodologia-card {
         flex-basis: 100%;
         max-width: 100%;
+    }
+}
+/* ========================================
+   RESPONSIVIDADE PLANOS E PREÇOS
+======================================== */
+@media (max-width: 600px) {
+    .preco-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .preco-card {
+        width: 85%;
     }
 }

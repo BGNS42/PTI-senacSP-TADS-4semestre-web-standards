@@ -746,13 +746,13 @@ footer {
         gap: var(--gap-medio);
         text-align: center;
     }
-
+    
     #sobre .foto-content {
         order: -1;
         display: flex;
         justify-content: center;
     }
-
+    
     .about-image {
         width: 100%;
         max-width: 340px;
@@ -760,9 +760,22 @@ footer {
         object-fit: cover;
         border-radius: var(--radius-medio);
     }
-
+    
     .sobre-diferenciais {
         padding-left: 0;
         list-style-position: inside;
+    }
+}
+/* ========================================
+   RESPONSIVIDADE METODOLOGIA
+======================================== */
+@media (max-width: 600px) {
+    .metodologia-header {
+        text-align: center;
+    }
+
+    .metodologia-card {
+        flex-basis: 100%;
+        max-width: 100%;
     }
 }
